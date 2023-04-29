@@ -11,6 +11,7 @@ function App() {
   
   return (
     <div className="App">
+    axios.defaults.withCredentials = true;
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
